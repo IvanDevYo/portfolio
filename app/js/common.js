@@ -8,4 +8,12 @@ $(function() {
 		$(".mobile-menu").toggleClass("opened");
 	});
 
+	$(document).ready(function() {
+		$(".owl-pictures").owlCarousel({
+			items:1,
+			loop: true,
+			dots: true
+		});
+	});
+
 });

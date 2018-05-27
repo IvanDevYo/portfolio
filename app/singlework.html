@@ -33,8 +33,36 @@
 </head>
 
 <body>
-	
+	<div id="preloader">
+		<section>
+		  <div class='sk-wave'>
+		    <div class='sk-rect sk-rect-1'></div>
+		    <div class='sk-rect sk-rect-2'></div>
+		    <div class='sk-rect sk-rect-3'></div>
+		    <div class='sk-rect sk-rect-4'></div>
+		    <div class='sk-rect sk-rect-5'></div>
+		  </div>
+		</section>
+	</div>
 	<div class="wrapper">
+		<article class="mobile-header">
+			<div class="nav-items">
+				<div class="mobile-logo">
+					<a href="/" class="logo-link"><h2>Portfolio<h2></a>
+				</div>
+				<a href="#" class="open-link"><i class="fas fa-bars"></i></a>
+			</div>
+			<nav class="mobile-menu">
+				<ul class="menu-list">
+					<li class="menu-item"><a href="/" class="menu-link"><span>Home</span></a></li>
+					<li class="menu-item"><a href="#" class="menu-link"><span>Work</span></a></li>
+					<li class="menu-item"><a href="#" class="menu-link"><span>About</span></a></li>
+					<li class="menu-item"><a href="#" class="menu-link"><span>Blog</span></a></li>
+					<li class="menu-item"><a href="#" class="menu-link"><span>Services</span></a></li>
+					<li class="menu-item"><a href="#" class="menu-link"><span>Contact</span></a></li>
+				</ul>
+			</nav>
+		</article>
 		<article class="sidebar">
 			<div class="side-wrap">
 				<div class="logo">
@@ -60,20 +88,31 @@
 				</div>
 			</div>
 		</article>
-		<main class="main">
-			<div class="row main-content">
+		<main class="main main-border">
+			<div class="row no-gutters">
 				<div class="col-lg-6">
-					<div class="post-picture_block">
-						
-					</div>
-					<div class="post-content_block">
-						
+					<div class="owl-carousel owl-pictures project-pictures">
+						<div class="project-pic" style="background-image: url(img/cat1.jpg);"></div>
+						<div class="project-pic" style="background-image: url(img/cat2.jpg);"></div>
+						<div class="project-pic" style="background-image: url(img/cat3.jpg);"></div>
+						<div class="project-pic" style="background-image: url(img/cat4.jpg);"></div>
+						<div class="project-pic" style="background-image: url(img/cat5.jpg);"></div>
 					</div>
 				</div>
 				<div class="col-lg-6"></div>
 			</div>
 		</main>
 	</div>
+	<footer class="footer-mobile">
+		<div class="social">
+			<div class="social social-github"></div>
+			<div class="social social-fb"></div>
+			<div class="social social-vk"></div>
+		</div>
+		<div class="copyright">
+			Kappe, All Rights Reserved
+		</div>
+	</footer>
 
 	<script src="js/scripts.min.js"></script>
 

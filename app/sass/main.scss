@@ -152,7 +152,7 @@ ul {
 
 .wrapper {
 	display: flex;
-	flex-direction: column;
+	min-height: 100%;
 }
 
 .mobile-header {
@@ -209,11 +209,14 @@ ul {
 	left: 0;
 	background-color: $second-color;
 	width: 300px;
-	height: 1200px;
+	height: 100vh;
+	z-index: 100;
+}
+
+.side-shadow {
 	-webkit-box-shadow: 10px 0px 38px 0px rgba(0,0,0,0.6);
 	-moz-box-shadow: 10px 0px 38px 0px rgba(0,0,0,0.6);
 	box-shadow: 10px 0px 38px 0px rgba(0,0,0,0.6);
-	z-index: 100;
 }
 
 .logo {
@@ -290,6 +293,10 @@ ul {
 .main {
 	margin-left: 300px;
 	width: 100%;
+	overflow: hidden;
+}
+
+.main-content {
 	background-color: $second-color;
 }
 
@@ -350,5 +357,41 @@ ul {
 	align-items: center;
 	background-color: $second-color;
 	padding-bottom: 20px;
+}
+
+.main-border {
+	border: 25px #b4b7b8 solid;
+}
+
+.project-pictures {
+	display: block;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.project-pic {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 350px;
+}
+
+.owl-dots {
+	position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.owl-dot {
+	height: 13px;
+	width: 21px;
+	margin-right: 7px;
+	background-color: #b5b5b5 !important;
+	border: 1px #e1e1e1 solid !important;
+
+	&.active {
+		background-color: $accent !important;
+		border: 1px $second-color solid !important;
+	}
 }
 @import "media" // Всегда в конце
