@@ -4,13 +4,26 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	/**/
+	.project__gallery-list {
+		justify-content: center;
+	}
+	.return__form {
+		width: 90%;
+	}
 }
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	/**/
+	.project__gallery-list {
+		justify-content: flex-start;
+	}
+	.col-padding {
+		padding-left: 0 !important;
+	}
+	.return__form {
+		width: 100%;
+	}
 }
 
 
@@ -37,7 +50,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+	.project__gallery-list {
+		justify-content: center;
+	}
 }
 
 

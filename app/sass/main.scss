@@ -14,22 +14,30 @@
 }
 
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #848484;
+	font-size: 14px;
+	font-family: $default-font;
 	opacity: 1;
 }
 
 *:-moz-placeholder {
-	color: #666;
+	color: #848484;
+	font-size: 14px;
+	font-family: $default-font;
 	opacity: 1;
 }
 
 *::-moz-placeholder {
-	color: #666;
+	color: #848484;
+	font-size: 14px;
+	font-family: $default-font;
 	opacity: 1;
 }
 
 *:-ms-input-placeholder {
-	color: #666;
+	color: #848484;
+	font-size: 14px;
+	font-family: $default-font;
 	opacity: 1;
 }
 
@@ -294,9 +302,11 @@ ul {
 	margin-left: 300px;
 	width: 100%;
 	overflow: hidden;
+	padding-bottom: 30px;
 }
 
-.main-content {
+.main-main {
+	padding-bottom: 0;
 	background-color: $second-color;
 }
 
@@ -377,7 +387,7 @@ ul {
 .project-pic {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	height: 350px;
 }
 
@@ -412,7 +422,7 @@ ul {
 	color: #a3a3a3;
 }
 
-.date {
+.info-block-in {
 	display: flex;
 	align-items: center;
 	border-bottom: 1px #e5e5e5 solid;
@@ -427,7 +437,7 @@ ul {
 	}
 }
 
-.date-text {
+.info-block-in-text {
 	margin-left: 13px;
 	font-size: 14px;
 	font-weight: 400;
@@ -455,4 +465,213 @@ ul {
 		color: #a3a3a3;
 	}
 }
+
+.project__gallery-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.project__gallery-image {
+	display: flex;
+	justify-content: center;
+	width: 78px;
+	height: 78px;
+	margin-right: 16px;
+	margin-bottom: 12px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.project__features-list {
+	margin-top: 10px;
+}
+
+.project__features-item {
+	display: flex;
+	color: #848484;
+	font-size: 14px;
+}
+
+.project__features-icon {
+	margin-right: 8px;
+}
+
+.about__info {
+	margin-top: 10px;
+}
+
+.my__skills-item {
+	margin-top: 14px;
+}
+
+.my__skills-status {
+	display: flex;
+	justify-content: space-between;
+}
+
+.my__skills-text {
+	font-size: 15px;
+	font-weight: 300;
+	color: #727272;
+}
+
+.my__skills-progress {
+	height: 34px;
+	border: 1px #e2e2e2 solid;
+}
+
+.my__skills-unit {
+	background-color: #e2e2e2;
+	height: 100%;
+}
+
+.main-bg {
+	background-color: #b4b7b8;
+}
+
+.blog-item {
+	position: relative;
+	display: block;
+	width: 294px;
+	background-color: #fff;
+	overflow: hidden;
+	margin-right: 25px;
+}
+
+.blog-pic {
+	height: 194px;
+	background-size: cover;
+	background-position: center;
+}
+	
+.blog__post__info-texts {
+	margin-top: 25px;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-bottom: 71px;
+	overflow: hidden;
+}
+
+.blog__post__info-title {
+	font-size: 18px;
+	font-weight: 350;
+}
+
+.blog__post__info-introtext {
+	color: #9c9c9c;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.blog__post__info-numbers {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 18px;
+	height: 51px;
+	border-top: 1px #e3e3e3 solid;
+}
+
+.blog__post__info-coments, .blog__post__info-date {
+	display: flex;
+	color: #9a9a9a;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.blog__post__info-coments {
+	margin-right: 17px;
+}
+
+.blog__post__info-icon {
+	margin-right: 8px;
+}
+
+.main-contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.return__form {
+	background-color: #fff;
+	width: 70%;
+	padding: 15px;
+}
+
+.inputs {
+	margin-top: 15px;
+}
+
+.input-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.input__before {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20%;
+	border: 1px #eaeaea solid;
+	border-right: none;
+	height: 60px;
+	color: $accent;
+
+	i {
+		border: 1px $accent solid;
+		border-radius: 50%;
+		padding: 10px 11px;
+		font-size: 12px;
+	}
+}
+
+.input__text {
+	height: 60px;
+	width: 80%;
+	border: 1px #eaeaea solid;
+	padding-left: 17px;
+}
+
+.col-padding {
+	padding-left: 15px !important;
+}
+
+.textarea {
+	width: 100%;
+	height: calc(100% - 10px);
+	border: 1px #eaeaea solid;
+	padding: 15px;
+}
+
+.submit-button {
+	width: 100%;
+	height: 60px;
+	background-color: $accent;
+	border: none;
+	span {
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+
+.main-temp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cbalink {
+	display: none;
+}
+
 @import "media" // Всегда в конце
