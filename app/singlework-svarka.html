@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Home</title>
+	<title>Сварка ПНД труб</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
 			</div>
 			<nav class="mobile-menu">
 				<ul class="menu-list">
-					<li class="menu-item active"><a href="/" class="menu-link"><span>Главная</span></a></li>
+					<li class="menu-item"><a href="/" class="menu-link"><span>Главная</span></a></li>
 					<li class="menu-item"><a href="about.html" class="menu-link"><span>О себе</span></a></li>
 					<li class="menu-item"><a href="temp.html" class="menu-link"><span>Блог</span></a></li>
 					<li class="menu-item"><a href="contact.html" class="menu-link"><span>Контакты</span></a></li>
@@ -62,13 +62,13 @@
 			</nav>
 		</article>
 		<article class="sidebar">
-			<div class="side-wrap side-shadow">
+			<div class="side-wrap">
 				<div class="logo">
 					<h2>Portfolio</h2>
 				</div>
 				<nav class="menu">
 					<ul class="menu-list">
-						<li class="menu-item active"><a href="/" class="menu-link"><span>Главная</span></a></li>
+						<li class="menu-item"><a href="/" class="menu-link"><span>Главная</span></a></li>
 						<li class="menu-item"><a href="about.html" class="menu-link"><span>О себе</span></a></li>
 						<li class="menu-item"><a href="temp.html" class="menu-link"><span>Блог</span></a></li>
 						<li class="menu-item"><a href="contact.html" class="menu-link"><span>Контакты</span></a></li>
@@ -84,34 +84,65 @@
 				</div>
 			</div>
 		</article>
-		<main class="main main-main">
-			<div class="row no-gutters main-content">
-				<div class="col-lg-4 main-item" style="background: url('img/projects/this/this.png');">
-					<div class="hover">
-						<span class="main-item_hover-title">Этот сайт</span>
-						<span class="main-item_hover-desc">верстка, jquery</span>
-						<a href="singlework-this.html" class="hover-link"><i class="fas fa-arrow-right"></i></a>
+		<main class="main main-border">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="mycol">
+						<div class="owl-carousel owl-pictures project-pictures">
+							<div class="project-pic" style="background-image: url(img/projects/svark/photo1.png);" data-hash="1"></div>
+							<div class="project-pic" style="background-image: url(img/projects/svark/photo2.png);" data-hash="2"></div>
+						</div>
+						<div class="project-description">
+							<div class="pr-caption">Сварка ПНД. Max Stroy</div>
+							<p class="pr-desc">
+								Лендинг созданный для компании Max Stroy. Используется CMS ModX.
+								<br><br>
+								Помимо лендинга нужно было разработать калькулятор расчета стоимости сварки труб.
+								<br><br>
+								<a href="http://svarkapnd.max-stroymsk.ru">Ссылка на сайт</a>
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 main-item" style="background: url('img/projects/rowan/rowan.png');">
-					<div class="hover">
-						<span class="main-item_hover-title">Rowan Store</span>
-						<span class="main-item_hover-desc">верстка, modx, jquery</span>
-						<a href="singlework-rowan.html" class="hover-link"><i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 main-item" style="background: url('img/projects/svark/photo1.png');">
-					<div class="hover">
-						<span class="main-item_hover-title">Сварка ПНД</span>
-						<span class="main-item_hover-desc">верстка, лендинг, modx, jquery</span>
-						<a href="singlework-svarka.html" class="hover-link"><i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 main-item" style="background: url('img/projects/rest/photo1.png');">
-					<div class="hover">
-						<span class="main-item_hover-title">REST_PILLOW</span>
-						<span class="main-item_hover-desc">верстка, лендинг, jquery</span>
-						<a href="singlework-rest.html" class="hover-link"><i class="fas fa-arrow-right"></i></a>
+				<div class="col-lg-6">
+					<div class="mycol">
+						<div class="project-info">
+							<div class="pr-caption">Информация о проекте</div>
+							<div class="info-block">
+								<div class="info-block-in">
+									<i class="far fa-calendar-alt"></i>
+									<div class="info-block-in-text">5 Июня, 2018</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags">
+							<div class="pr-caption">Теги</div>
+							<div class="tags-block">
+								<ul class="tags-list">
+									<li class="tags-item"><a href="#" class="tags-link">верстка</a></li>
+									<li class="tags-item"><a href="#" class="tags-link">landing</a></li>
+									<li class="tags-item"><a href="#" class="tags-link">modx</a></li>
+									<li class="tags-item"><a href="#" class="tags-link">jquery</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="project__features">
+							<div class="pr-caption">Особенности проекта</div>
+							<div class="project__features-list">
+								<div class="project__features-item">
+									<div class="project__features-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+									<div class="project__features-text">Адаптивный дизайн</div>
+								</div>
+								<div class="project__features-item">
+									<div class="project__features-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+									<div class="project__features-text">Калькулятор расчета стоимости</div>
+								</div>
+								<div class="project__features-item">
+									<div class="project__features-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+									<div class="project__features-text">Удобная CMS</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
