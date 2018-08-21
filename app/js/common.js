@@ -1,7 +1,9 @@
 $(function() {
 	$(window).on('load', function() {
 		$('#preloader').find('div').delay(1000).fadeOut().end().delay(1000).fadeOut('slow');
+		console.log(1);
 		setTimeout(function() {
+			console.log(2);
 			$('#preloader').css('display', 'none');
 		}, 1000);
 	});
